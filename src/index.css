@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.portfolio-images {
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+  }
+  
+  .img-ovelay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-images img {
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-ovelay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%
+    );
+    opacity: 0;
+    color: var(--third);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+  }
+  
+  .img-ovelay:hover > .overlay {
+    opacity: 0.8;
+    transform: translateY(0);
+    cursor: pointer;
+  }
+  
+  .img-ovelay .overlay .common-heading {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .common-heading{
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  .footerr {
+    width: 100%;
+    position: fixed;
+    bottom: 10rem;
+    text-align: left;
+    padding: 30px 0;
+    z-index: 2;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+  }
+
+  .icons {
+    display: inline-block;
+  }
+
+  .line {
+    border-left: 2px solid rgb(113, 114, 203);
+    height: 103px;
+    position: relative;
+    left: -15px;
+    top: 108%;
+    z-index: 10px;
+  }
+
+  .line2 {
+    border-left: 2px solid rgb(113, 114, 203);
+    height: 98px;
+    position: relative;
+    left: -15px;
+    bottom: 60%;
+  }
+
